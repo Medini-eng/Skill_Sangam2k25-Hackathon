@@ -1,0 +1,283 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f7fa;
+  margin: 0;
+  color: #222;
+}
+header {
+  background: #2d2d6e;
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+}
+.subtitle {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #ffe0b2;
+}
+.intro {
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.card {
+  width: 320px;
+  height: 380px;
+  perspective: 1200px;
+  cursor: pointer;
+  position: relative;
+}
+.card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(44, 44, 90, 0.12);
+  background: #fff;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.7s cubic-bezier(.4,2.3,.3,1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.2rem;
+}
+.card-front {
+  z-index: 2;
+}
+.card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+  background: #f0f4ff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+}
+.card-back-content {
+  overflow-y: auto;
+  max-height: 260px;
+  padding-top: 0.2rem;
+}
+.card-back h4 {
+  margin: 0.5rem 0 0.2rem 0;
+  color: #e65100;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.card-back p {
+  margin: 0 0 0.7rem 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.card.flipped .card-front {
+  transform: rotateY(180deg);
+}
+.card.flipped .card-back {
+  transform: rotateY(0deg);
+}
+.hero-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  margin-bottom: 1.5rem;
+}
+.hero-banner img {
+  width: 90%;
+  height: auto;
+  max-height: 75vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(44,44,90,0.10);
+  margin-top: 1.5rem;
+}
+.company-logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+.card-front img[alt="TCE Logo"], .card-front img[alt="Blackfrog Logo"] {
+  width: 143px;
+  height: 143px;
+}
+.teaser {
+  color: #2d2d6e;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+footer {
+  background: #2d2d6e;
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem 0 0.5rem 0;
+  margin-top: 2rem;
+}
+.partners {
+  margin-top: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.partner-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 50%;
+  padding: 3px;
+}
+@media (max-width: 900px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0 0.5rem 0;
+}
+.tab-btn {
+  background: #2d2d6e;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 2.2rem;
+  border-radius: 24px 24px 0 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s;
+}
+.tab-btn.active, .tab-btn:hover {
+  background: #e65100;
+  color: #fff;
+}
+.tab-content {
+  display: none;
+  animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.reveal-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0 1rem 0;
+}
+.reveal-tab-btn {
+  background: #fff;
+  color: #2d2d6e;
+  border: 2px solid #2d2d6e;
+  padding: 0.5rem 1.5rem;
+  border-radius: 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.reveal-tab-btn.active, .reveal-tab-btn:hover {
+  background: #2d2d6e;
+  color: #fff;
+}
+.surprise-card .card-front {
+  background: linear-gradient(135deg, #e65100 0%, #2d2d6e 100%);
+  color: #fff;
+}
+.surprise-card .teaser {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.surprise-card .card-back {
+  background: #fffbe7;
+  color: #222;
+  border: 2px solid #e65100;
+}
+h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 0.5rem 0 0.2rem 0;
+}
+.red-k {
+  color: #e53935;
+}
+.subtitle.highlight {
+  font-size: 1.3rem;
+  color: #fff;
+  background: #e65100;
+  padding: 0.4rem 1.2rem;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 0.7rem;
+}
+.instructions-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(44,44,90,0.07);
+  padding: 2rem 2.5rem;
+}
+.instructions-container h2 {
+  text-align: center;
+  color: #2d2d6e;
+  margin-bottom: 1.5rem;
+}
+.instructions-block {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+.instructions-block:last-child {
+  border-bottom: none;
+}
+.instructions-block h3 {
+  color: #e65100;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.instructions-block ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.instructions-block li {
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+.event-flow-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 1.05rem;
+}
+.event-flow-table th, .event-flow-table td {
+  border: 1px solid #e0e0e0;
+  padding: 0.7rem 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+.event-flow-table th {
+  background: #2d2d6e;
+  color: #fff;
+  font-weight: 600;
+}
+.event-flow-table tr:nth-child(even) td {
+  background: #f7f7fa;
+}
+.event-flow-table tr:nth-child(odd) td {
+  background: #fff;
+} 

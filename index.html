@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skill Sangam 2K25 – Problem Statement Reveal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hero-banner">
+    <img src="hero-banner.jpg" alt="Skill Sangam 2K25 Poster">
+  </div>
+  <header>
+    <h1>Skill Sangam 2<span class="red-k">K</span>25</h1>
+    <p class="subtitle highlight">24 Hrs Overnight Hackathon | 2nd & 3rd June 2025 | Sahyadri Engineering College</p>
+  </header>
+  <nav class="main-tabs">
+    <button class="tab-btn active" onclick="showTab('home')">Home</button>
+    <button class="tab-btn" onclick="showTab('eventflow')">Event Flow</button>
+    <button class="tab-btn" onclick="showTab('instructions')">Instructions</button>
+    <button class="tab-btn" onclick="showTab('reveal')">Problem Statements Reveal</button>
+  </nav>
+  <section id="home" class="tab-content" style="display:block;">
+    <section class="intro">
+      <h2>Welcome to Skill Sangam 2K25</h2>
+      <p>Are you ready to challenge yourself? Explore the event details and get ready for the big reveal!</p>
+    </section>
+  </section>
+  <section id="eventflow" class="tab-content" style="display:none;">
+    <div class="instructions-container">
+      <h2>Event Flow & Agenda</h2>
+      <div class="instructions-block">
+        <h3>1. Registration & Welcome</h3>
+        <ul>
+          <li><strong>Time:</strong> Before 9:30 AM</li>
+          <li><strong>Location:</strong> Registration Booth near Seminar Hall Ground Floor</li>
+          <li><strong>Task:</strong> Complete the registration process and collect the Welcome Kit.</li>
+        </ul>
+      </div>
+      <div class="instructions-block">
+        <h3>2. Inauguration Ceremony</h3>
+        <ul>
+          <li><strong>Time:</strong> 10:00 AM</li>
+          <li><strong>Location:</strong> Seminar Hall Ground Floor</li>
+          <li><strong>Activity:</strong> Opening speech by Chief Guests. Briefing about the Hackathon rules and judging process.</li>
+        </ul>
+      </div>
+      <div class="instructions-block">
+        <h3>3. Team Allocation & Kickoff</h3>
+        <ul>
+          <li><strong>Time:</strong> 10:30 AM</li>
+          <li><strong>Task:</strong> Teams move to allotted rooms as per the registration details.</li>
+          <li><strong>Objective:</strong> Settle in the workspace. Connect with team mentors. Finalize problem statement.</li>
+        </ul>
+      </div>
+      <div class="instructions-block">
+        <h3>4. Hackathon Launch</h3>
+        <ul>
+          <li><strong>Time:</strong> 11:00 AM</li>
+          <li><strong>Event Launch:</strong> Begin work on the selected problem statement.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="instructions" class="tab-content" style="display:none;">
+    <div class="instructions-container">
+      <h2>Instructions & Milestone Checkpoints</h2>
+      <div class="instructions-block">
+        <ul>
+          <li>The available components from the Skill Labs can be used for the hackathon.</li>
+          <li>Each problem statement can be taken by a maximum of 5 teams. Extra components must be brought by students for the event.</li>
+        </ul>
+      </div>
+      <div class="instructions-block">
+        <h3>Checkpoint 1 – Ideation & Problem Presentation</h3>
+        <ul>
+          <li><strong>Time:</strong> 12:30 PM</li>
+          <li><strong>Task:</strong> Submit your initial idea and problem understanding. Short presentation to mentors on proposed solutions and technologies.</li>
+          <li><strong>Focus Areas:</strong> Clarity of the problem, innovation in solution, component & technology plan.</li>
+        </ul>
+      </div>
+      <div class="instructions-block">
+        <h3>Checkpoint 2 – Technical Progress Review</h3>
+        <ul>
+          <li><strong>Time:</strong> 5:30 PM</li>
+          <li><strong>Task:</strong> Demonstrate hardware & circuit progress. Explain selected electronic components. Share team coordination, work distribution, and features implemented. Bonus for innovative elements added to the base idea.</li>
+          <li><strong>Focus Areas:</strong> Circuit building & microcontroller programming, UI/UX or dashboard components, early demo of prototype if possible.</li>
+        </ul>
+      </div>
+      <div class="instructions-block">
+        <h3>Midnight Mentoring & Evaluation</h3>
+        <ul>
+          <li><strong>Time:</strong> Post 12:00 AM</li>
+          <li><strong>Task:</strong> Get feedback from industry mentors. Adjust technical aspects based on expert inputs.</li>
+          <li><strong>Tip:</strong> Use this session to elevate the project to an MVP (Minimum Viable Product).</li>
+        </ul>
+      </div>
+      <div class="instructions-block">
+        <h3>Late Night Fun & Engagement</h3>
+        <ul>
+          <li>Games, icebreakers, and surprise snacks to boost team spirit!</li>
+        </ul>
+      </div>
+      <div class="instructions-block">
+        <h3>Day 2 - Final Phase</h3>
+        <ul>
+          <li><strong>Checkpoint 3 – Final Selection</strong></li>
+          <li><strong>Time:</strong> 9:30 AM (Next Day)</li>
+          <li><strong>Task:</strong> Present complete working prototype (MVP). Final technical demonstration and documentation submission.</li>
+        </ul>
+      </div>
+      <div class="instructions-block">
+        <h3>Judging Criteria</h3>
+        <ul>
+          <li>Real-time functionality</li>
+          <li>Component utilization</li>
+          <li>Coding and integration</li>
+          <li>Team dynamics</li>
+          <li>Product impact</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="reveal" class="tab-content" style="display:none;">
+    <div class="reveal-tabs">
+      <button class="reveal-tab-btn active" onclick="showRevealTab('second')">2nd Year</button>
+      <button class="reveal-tab-btn" onclick="showRevealTab('third')">3rd Year</button>
+    </div>
+    <div id="second" class="reveal-content" style="display:block;">
+      <h2>Problem Statements for 2nd Year</h2>
+      <div class="cards-container">
+        <!-- Blackfrog Technologies 2nd Year -->
+        <div class="card surprise-card" onclick="surpriseReveal(this)">
+          <div class="card-front">
+            <img src="Blackfrog_Logo.png" alt="Blackfrog Logo" class="company-logo">
+            <h3>Blackfrog Technologies</h3>
+            <p class="teaser">Click to reveal your challenge!</p>
+          </div>
+          <div class="card-back">
+            <div class="card-back-content">
+              <h4>Real-Time Voice Transfer and Human Speech Filter</h4>
+              <p>Develop a real-time voice transfer system using two ESP32 boards. Connect two microphones to the first ESP32 and a speaker to the second ESP32 board. Implement a real-time voice transfer system between the two ESP32 boards. Utilize Bluetooth communication protocols for seamless data transfer. Minimize latency to achieve a smooth and real-time voice transfer experience. Design and Implement a Filter to selectively transmit only Human speech to the receiving ESP32/STM.</p>
+              <h4>Smart Inventory & Shelf Management System</h4>
+              <p>Build a system that tracks stock levels on shelves using weight sensors or RFID. Send alerts for restocking and generate usage analytics on a cloud dashboard.</p>
+            </div>
+          </div>
+        </div>
+        <!-- RDL Technologies 2nd Year -->
+        <div class="card surprise-card" onclick="surpriseReveal(this)">
+          <div class="card-front">
+            <img src="RDL_Logo.png" alt="RDL Logo" class="company-logo">
+            <h3>RDL Technologies</h3>
+            <p class="teaser">Click to reveal your challenge!</p>
+          </div>
+          <div class="card-back">
+            <h4>Remote Biometric Enrollment & Smart Machine Access System</h4>
+            <p>This system uses an ESP32 with an R307 fingerprint sensor to control machine or door access based on biometric authentication. A Raspberry Pi acts as the central server for remote fingerprint enrollment, access monitoring, and shift log tracking via a web dashboard. Real-time data is synced over Wi-Fi using HTTP/MQTT protocols. This setup ensures secure access control and efficient employee shift monitoring.</p>
+          </div>
+        </div>
+        <!-- TCE 2nd Year -->
+        <div class="card surprise-card" onclick="surpriseReveal(this)">
+          <div class="card-front">
+            <img src="TCE_Logo.png" alt="TCE Logo" class="company-logo">
+            <h3>TCE</h3>
+            <p class="teaser">Click to reveal your challenge!</p>
+          </div>
+          <div class="card-back">
+            <h4>HerSecure: Predictive Safety & Alert System for Women</h4>
+            <p>Develop an analytics platform to detect and prevent safety threats against women. Combine location tracking, wearable panic devices, predictive AI, and data from public sources to alert users and authorities in real time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="third" class="reveal-content" style="display:none;">
+      <h2>Problem Statements for 3rd Year</h2>
+      <div class="cards-container">
+        <!-- Blackfrog Technologies 3rd Year -->
+        <div class="card surprise-card" onclick="surpriseReveal(this)">
+          <div class="card-front">
+            <img src="Blackfrog_Logo.png" alt="Blackfrog Logo" class="company-logo">
+            <h3>Blackfrog Technologies</h3>
+            <p class="teaser">Click to reveal your challenge!</p>
+          </div>
+          <div class="card-back">
+            <div class="card-back-content">
+              <h4>Energy Usage Optimizer</h4>
+              <p>Create a system that tracks the power usage of any appliances and suggests optimizations. Integrate with cloud to view power stats and historical trends.</p>
+              <h4>Data Collection from Measuring Instruments (Industrial Data Logger RS-485)</h4>
+              <p>Develop a system using STM32 to collect data from instruments (Multimeter, DAQ, Oscilloscope) via RS-485 protocol and display it on a remote web dashboard.</p>
+            </div>
+          </div>
+        </div>
+        <!-- RDL Technologies 3rd Year -->
+        <div class="card surprise-card" onclick="surpriseReveal(this)">
+          <div class="card-front">
+            <img src="RDL_Logo.png" alt="RDL Logo" class="company-logo">
+            <h3>RDL Technologies</h3>
+            <p class="teaser">Click to reveal your challenge!</p>
+          </div>
+          <div class="card-back">
+            <div class="card-back-content">
+              <h4>Smart Security – Biometric Access Control & Shift Logging</h4>
+              <p>This system uses an ESP32/STM32 with an R307 fingerprint sensor to control machine or door access based on biometric authentication. A Raspberry Pi acts as the central server for remote fingerprint enrollment, access monitoring, and shift log tracking via a web dashboard. Real-time data is synced over Wi-Fi using HTTP/MQTT protocols. This setup ensures secure access control and efficient employee shift monitoring.</p>
+              <h4>Industry 4.0 – In-Vehicle Subsystem Communication for Smart Dashboards</h4>
+              <p>Develop an STM-based embedded system to simulate communication between multiple in-vehicle subsystems (e.g., speed sensor, fuel monitor, infotainment, temperature control) and a central smart dashboard. The system should demonstrate real-time data exchange, fault tolerance, and subsystem isolation using a communication protocol like CAN or UART.</p>
+            </div>
+          </div>
+        </div>
+        <!-- TCE 3rd Year -->
+        <div class="card surprise-card" onclick="surpriseReveal(this)">
+          <div class="card-front">
+            <img src="TCE_Logo.png" alt="TCE Logo" class="company-logo">
+            <h3>TCE</h3>
+            <p class="teaser">Click to reveal your challenge!</p>
+          </div>
+          <div class="card-back">
+            <div class="card-back-content">
+              <h4>Smart AI-Integrated Yoga Mat</h4>
+              <p>Develop a smart yoga mat with AI, smartwatch sync, and expert content. The mat will track posture, breathing, and movements using embedded sensors, and offer feedback and personalized plans via an app, focusing on affordability and user-friendliness.</p>
+              <h4>Grey Water Management (GWM)</h4>
+              <p>Designing low-cost testing kits capable of detecting bacterial, faecal, and microbial contaminants in groundwater and display it on Web/Mobile Dashboard using sensors integration and water quality check.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Venue: Sahyadri Campus | 9AM Onwards | Contact: info@sahyadri.edu.in</p>
+    <div class="partners">
+      <span>Knowledge Partners:</span>
+      <img src="Blackfrog_Logo.png" alt="Blackfrog" class="partner-logo">
+      <img src="RDL_Logo.png" alt="RDL" class="partner-logo">
+      <img src="TCE_Logo.png" alt="TCE" class="partner-logo">
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 
